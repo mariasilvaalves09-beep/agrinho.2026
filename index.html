@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeHorizon - Agro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão de acessibilidade fixo -->
+    <div id="acessibilidade">
+        <button onclick="aumentarFonte()">A+</button>
+        <button onclick="diminuirFonte()">A-</button>
+        <button onclick="altoContraste()">Alto Contraste</button>
+    </div>
 
+    <header>
+        <h1>PrimeHorizon</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao PrimeHorizon</h2>
+            <p>Descubra como o agro pode ser forte e sustentável, equilibrando produção e preservação do meio ambiente.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre o Tema</h2>
+            <p>Nosso objetivo é promover a consciência ambiental e mostrar tecnologias e práticas de agricultura sustentável.</p>
+        </section>
+
+        <section id="problema">
+            <h2>Problema Ambiental</h2>
+            <p>O desmatamento e a exploração exagerada do solo comprometem o equilíbrio ambiental e a produção futura.</p>
+        </section>
+
+        <section id="solucoes">
+            <h2>Soluções Sustentáveis</h2>
+            <ul>
+                <li>Produção orgânica sem uso de agrotóxicos.</li>
+                <li>Uso de compostagem e fertilizantes naturais.</li>
+                <li>Coleta de água da chuva e irrigação eficiente.</li>
+                <li>Uso de energia solar e tecnologias limpas na propriedade.</li>
+                <li>Preservação de áreas de vegetação nativa e corredores ecológicos.</li>
+            </ul>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz Interativo</h2>
+            <p>Responda algumas perguntas sobre seus hábitos e receba dicas personalizadas.</p>
+            <form id="formQuiz">
+                <label>1. Você utiliza fertilizantes orgânicos?</label><br>
+                <input type="radio" name="fertilizante" value="sim"> Sim<br>
+                <input type="radio" name="fertilizante" value="nao"> Não<br><br>
+
+                <label>2. Você monitora o consumo de água na propriedade?</label><br>
+                <input type="radio" name="agua" value="sim"> Sim<br>
+                <input type="radio" name="agua" value="nao"> Não<br><br>
+
+                <label>3. Você preserva áreas de vegetação nativa?</label><br>
+                <input type="radio" name="vegetacao" value="sim"> Sim<br>
+                <input type="radio" name="vegetacao" value="nao"> Não<br><br>
+
+                <label>4. Você separa resíduos orgânicos e realiza compostagem?</label><br>
+                <input type="radio" name="compostagem" value="sim"> Sim<br>
+                <input type="radio" name="compostagem" value="nao"> Não<br><br>
+
+                <label>5. Você utiliza tecnologias limpas ou energias renováveis?</label><br>
+                <input type="radio" name="energia" value="sim"> Sim<br>
+                <input type="radio" name="energia" value="nao"> Não<br><br>
+
+                <button type="button" onclick="avaliarQuiz()">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Agro forte de verdade caminha junto com a sustentabilidade. Cada ação conta para o futuro do planeta.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PrimeHorizon - Projeto Concurso Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
